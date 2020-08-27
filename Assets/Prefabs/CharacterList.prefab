@@ -206,10 +206,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: ec6e0642b2090274783a17a02a343dd4,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: ec6e0642b2090274783a17a02a343dd4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: ec6e0642b2090274783a17a02a343dd4,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: ec6e0642b2090274783a17a02a343dd4,
         type: 3}
       propertyPath: m_Name
       value: Stein_Fertig
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ec6e0642b2090274783a17a02a343dd4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec6e0642b2090274783a17a02a343dd4, type: 3}
@@ -304,7 +324,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: fc8a7e0656d86fd48a51ddc459e8488d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2896787794895662958, guid: fc8a7e0656d86fd48a51ddc459e8488d,
         type: 3}
@@ -440,7 +460,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ce39581f0b3218740841681f9412f96a, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: c5bdaf13f1225394dad64b79c76c59d7,
         type: 3}
       propertyPath: m_Name
