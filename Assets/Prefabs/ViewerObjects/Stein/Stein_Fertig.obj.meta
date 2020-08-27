@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ed3e4c494b3dab44e924902875b9a2ec
+guid: ec6e0642b2090274783a17a02a343dd4
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Miniatur_Low_Poly_Miniatur_Low_Poly_Default_OBJ.001Mat
-    second: {fileID: 2100000, guid: 8b2b65140e2d5294ab6b1cc514f77160, type: 2}
+      name: Stein_Low_Poly.001_Stein_Low_Poly.003_Stein_RandMat
+    second: {fileID: 2100000, guid: 3d8a073de4417a44abd4e18258a68e02, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Miniatur_Low_Poly_Miniatur_Low_Poly_MaterialMat
-    second: {fileID: 2100000, guid: 8b2b65140e2d5294ab6b1cc514f77160, type: 2}
+      name: Stein_Low_Poly_Stein_Low_Poly_Default_OBJMat
+    second: {fileID: 2100000, guid: 56043484ca622574d96acc5c9eefebda, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
