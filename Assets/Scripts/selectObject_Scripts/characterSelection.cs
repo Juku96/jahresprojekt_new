@@ -41,7 +41,7 @@ public class characterSelection : MonoBehaviour
           characterList[i].SetActive(false);
         }
 
-        if(sceneName == "SampleScene") {
+        if(sceneName == "ViewerScene") {
           if(characterList[index]) {
              characterList[index].SetActive(true);
           }
@@ -85,7 +85,7 @@ public class characterSelection : MonoBehaviour
 
         // Szene Laden
         PlayerPrefs.SetInt("LoadedObj",index);
-        SceneManager.LoadSceneAsync("SampleScene"); //Name von Szene muss noch geändert werden
+        SceneManager.LoadSceneAsync("ViewerScene"); //Name von Szene muss noch geändert werden
         DontDestroyOnLoad(passedObj);
     }
 
