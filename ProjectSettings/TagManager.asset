@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - KeyControl
+  - Zoom
+  - CamPivot
+  - panel_Placeholder
+  - Vergleich
+  - LoadObj
   layers:
   - Default
   - TransparentFX
