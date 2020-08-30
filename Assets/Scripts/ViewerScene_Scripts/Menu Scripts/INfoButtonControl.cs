@@ -37,6 +37,7 @@ public class INfoButtonControl : MonoBehaviour
         Buttontransfrom = new Transform[buttonPrefabs.Length];
         for (i = 0; i < buttonPrefabs.Length; i++)
         {
+
             
             Buttontransfrom[i] = transform.GetChild(i);
             

@@ -38,16 +38,20 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
       
          cp= FindObjectOfType<CameraPerspective>();
         controls = new PlayerControls();
-        controls.MouseControl.Button.performed += ctx => GetText();
-      
+        mainCam = Camera.main;
+     
+        if (mainCam!=null) {
+            controls.MouseControl.Button.performed += ctx => GetText();
+        }
     }// Start is called before the first frame update
     public void Start()
     {
+        
         Panel = GameObject.FindGameObjectWithTag("panel_Placeholder");
         Panel.SetActive(false);
 
         CamPivot = GameObject.FindWithTag("CamPivot");
-        mainCam = Camera.main;
+   
         defaultPosCam = mainCam.transform.position;
         scrollbar = GameObject.FindGameObjectWithTag("Zoom").GetComponent<Scrollbar>();
         defaultRotCam = mainCam.transform.localRotation;
@@ -69,13 +73,14 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
     {
 
         if (close == false)
-        {       //Komisches Inputystem
-                // Vector2 mousePos = Mouse.current.position;
+        {
            
+
             RaycastHit hit;
             Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 50) && hit.collider.gameObject.CompareTag("Sprite"))
             {
+              
                 clicked = hit.collider.gameObject;
                 journeyLength = Vector3.Distance(defaultPosCam, clicked.transform.position);
                 StopAllCoroutines();
@@ -88,9 +93,6 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
             StartCoroutine(CameraDefault()); }
 
 
-        
-
-
     }
      IEnumerator CameraClose(GameObject clicked) {
 
@@ -99,8 +101,8 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
         close = true;
         cp.UpdateZoom(close);
         Panel.SetActive(true);
-      
         textInfo = clicked.GetComponentInChildren<Text>();
+
         placeholder.text = textInfo.text;
         clicked.SetActive(false);
         while (t <1)
@@ -110,7 +112,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
             CamPivot.transform.position= Vector3.Lerp(CamPivot.transform.position, clicked.transform.position, t);
             mainCam.transform.position = Vector3.Lerp(mainCam.transform.position,clicked.transform.position+clicked.transform.forward * -offset,t);
 
-            mainCam.transform.LookAt(clicked.transform.position);
+            mainCam.transform.rotation = Quaternion.Lerp(mainCam.transform.rotation,clicked.transform.rotation,t);
             mainCam.fieldOfView =  Mathf.Lerp(mainCam.fieldOfView, 60f,t);
             scrollbar.size = 1 - (mainCam.fieldOfView - 10f) / (60f - 10f);
            
@@ -123,7 +125,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
 
         CamPivot.transform.position = clicked.transform.position;
         mainCam.transform.position = clicked.transform.position + clicked.transform.forward * -offset;
-        
+      
         mainCam.fieldOfView = 60f;
         zooming = false;
         yield return close;

@@ -23,29 +23,29 @@ public class LoadComapreObj : MonoBehaviour
 
 
 
-        if (gameObject.name == "Statue_medium")
+        if (gameObject.name == "Katze_Fertig")
         {
             compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/Banana");
 
             createButton(compareObjects);
 
         }
-        if (gameObject.name == "Stadt")
+        if (gameObject.name == "Miniatur_Fertig")
         {
 
             compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/Audi R8");
 
             createButton(compareObjects);
         }
-        if (gameObject.name == "Horsy")
+        if (gameObject.name == "Kopf_Fertig")
         {
             compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/75-chevrolet_camaro_ss");
             createButton(compareObjects);
 
         }
-        if (gameObject.name == "Fels_Mit_Hand")
+        if (gameObject.name == "Stein_Fertig")
         {
-            compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/NochKeinVergleichObjekt");
+            compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/Audi R8");
             createButton(compareObjects);
 
 
@@ -64,7 +64,7 @@ public class LoadComapreObj : MonoBehaviour
     {
 
 
-        //Hier muss ein Button aus dem Button array instantiiert werden, kein Objekt, das machen wir unten drunter
+    
 
 
 
