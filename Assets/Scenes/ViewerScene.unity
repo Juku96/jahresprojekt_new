@@ -571,7 +571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786665763}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1786368230}
@@ -818,7 +818,7 @@ MonoBehaviour:
   ti: {fileID: 0}
   sprite: {fileID: 0}
   clicked: {fileID: 0}
-  mainCam: {fileID: 0}
+  mainCam: {fileID: 1786368229}
   zoomFactor: 5
   CamPivot: {fileID: 1786665763}
   distance: {x: 0, y: 0, z: 0}
@@ -874,7 +874,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.3019608, g: 0.41960785, b: 0.90588236, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -949,7 +949,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127364814}
   m_LocalRotation: {x: 0.34130818, y: 0.4490453, z: 0.4603629, w: 0.6855166}
-  m_LocalPosition: {x: -95.62, y: -47.7, z: -19.39}
+  m_LocalPosition: {x: -307, y: -235.85, z: -123.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 330893578}

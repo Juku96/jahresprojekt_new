@@ -38,11 +38,11 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
       
          cp= FindObjectOfType<CameraPerspective>();
         controls = new PlayerControls();
-        mainCam = Camera.main;
      
-        if (mainCam!=null) {
+     
+     
             controls.MouseControl.Button.performed += ctx => GetText();
-        }
+        
     }// Start is called before the first frame update
     public void Start()
     {
@@ -71,28 +71,30 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
     }
     public void GetText()
     {
-
-        if (close == false)
+        if (mainCam != null)
         {
-           
-
-            RaycastHit hit;
-            Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 50) && hit.collider.gameObject.CompareTag("Sprite"))
+            if (close == false)
             {
-              
-                clicked = hit.collider.gameObject;
-                journeyLength = Vector3.Distance(defaultPosCam, clicked.transform.position);
-                StopAllCoroutines();
-                StartCoroutine(CameraClose(clicked));
+
+
+                RaycastHit hit;
+                Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit, 50) && hit.collider.gameObject.CompareTag("Sprite"))
+                {
+
+                    clicked = hit.collider.gameObject;
+                    journeyLength = Vector3.Distance(defaultPosCam, clicked.transform.position);
+                    StopAllCoroutines();
+                    StartCoroutine(CameraClose(clicked));
+                }
             }
+            else if (close == true)
+            {
+                StopAllCoroutines();
+                StartCoroutine(CameraDefault());
+            }
+
         }
-        else if (close == true)
-        {
-            StopAllCoroutines();
-            StartCoroutine(CameraDefault()); }
-
-
     }
      IEnumerator CameraClose(GameObject clicked) {
 
