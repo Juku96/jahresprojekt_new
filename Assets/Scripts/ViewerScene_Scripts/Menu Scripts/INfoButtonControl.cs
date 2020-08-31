@@ -42,7 +42,6 @@ public class INfoButtonControl : MonoBehaviour
 
     
             Buttontransfrom[i] = transform.GetChild(i);
-              
             Destroy(transform.GetChild(i).gameObject);
             Debug.Log(buttonPrefabs.Length);
             Debug.Log(info.gameObject.transform.GetChild(i));
@@ -53,16 +52,19 @@ public class INfoButtonControl : MonoBehaviour
         buttons= new GameObject[buttonPrefabs.Length];
         for (j = 0; j < buttonPrefabs.Length; j++)
         {   
-            infoText[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].GetComponentInChildren<Text>().text; 
+            infoText[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].name;
+            Debug.Log(infoText[j].transform.parent);
             buttonPrefabs[j].GetComponentInChildren<Text>().text= Buttontransfrom[j].GetComponentInChildren<Text>().text;
             buttonPrefabs[j].name = Buttontransfrom[j].name;
+           
             buttons[j] = Instantiate(buttonPrefabs[j], Buttontransfrom[j].position, Buttontransfrom[j].transform.rotation);
             buttons[j].SetActive(true);
             objRenderer = buttons[j].GetComponent<Renderer>();
             objRenderer.material = Zwrite; 
             }
-              
-        
+
+
+
         cam = Camera.main;
       
     }

@@ -2182,7 +2182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hallo
+  m_Text: Nudelsuppe
 --- !u!222 &704996940204529075
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2908,7 +2908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &3714129499828179030
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4261,7 +4261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &6699528115720688898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4846,7 +4846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &8326916030920097925
 GameObject:
   m_ObjectHideFlags: 0
@@ -4908,7 +4908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8700638325510421332
 Transform:
   m_ObjectHideFlags: 0
@@ -5046,7 +5046,7 @@ GameObject:
   - component: {fileID: 6699528115720688898}
   - component: {fileID: 6657626576026200027}
   m_Layer: 0
-  m_Name: Hand
+  m_Name: Turm
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

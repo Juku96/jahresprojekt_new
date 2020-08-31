@@ -78,7 +78,7 @@ public class characterSelection : MonoBehaviour
     public void confirmObject() {
       characterList[PlayerRight].SetActive(false);
       characterList[PlayerLeft].SetActive(false);
-        SelectedObj = GameObject.Find(characterList[index].name);
+      SelectedObj = GameObject.Find(characterList[index].name);
    
        passedObj= Instantiate(SelectedObj, transform.position, Quaternion.identity);
 

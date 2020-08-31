@@ -3,17 +3,7 @@ guid: ec6e0642b2090274783a17a02a343dd4
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Stein_Low_Poly.001_Stein_Low_Poly.003_Stein_RandMat
-    second: {fileID: 2100000, guid: 3d8a073de4417a44abd4e18258a68e02, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Stein_Low_Poly_Stein_Low_Poly_Default_OBJMat
-    second: {fileID: 2100000, guid: 56043484ca622574d96acc5c9eefebda, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
