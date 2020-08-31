@@ -48,19 +48,20 @@ public class INfoButtonControl : MonoBehaviour
 
           
             infoText[i] = info.gameObject.transform.GetChild(i);
-
+           
         }
        
         buttons= new GameObject[buttonPrefabs.Length];
         for (j = 0; j < buttonPrefabs.Length; j++)
         { int _i = j;
             infoText[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].name;
-
+            
     
             buttonPrefabs[j].name = Buttontransfrom[j].name;
             
             buttons[j] = Instantiate(buttonPrefabs[j], Buttontransfrom[j].position, Buttontransfrom[j].transform.rotation);
             buttons[j].SetActive(true);
+            buttons[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].GetComponentInChildren<Text>().text;
             objRenderer = buttons[j].GetComponent<Renderer>();
             objRenderer.material = Zwrite; 
             infoText[j].GetComponent<Button>().onClick.AddListener(() => ti.InfoMenuClicked(buttons[_i]));

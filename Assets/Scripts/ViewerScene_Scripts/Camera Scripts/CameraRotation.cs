@@ -44,7 +44,7 @@ public class CameraRotation : MonoBehaviour
                 getTransPos();
 
                 transform.Rotate(Vector3.up, Input.GetAxis("Mouse X") * moveSpeed * Time.deltaTime, Space.World);
-                transform.Rotate( Input.GetAxis("Mouse Y") * moveSpeed * Time.deltaTime, 0, 0);
+                transform.Rotate( -Input.GetAxis("Mouse Y") * moveSpeed * Time.deltaTime, 0, 0);
                 once = true;
             }
 
