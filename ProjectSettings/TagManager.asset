@@ -10,6 +10,8 @@ TagManager:
   - panel_Placeholder
   - Vergleich
   - LoadObj
+  - Sprite
+  - MenuInfo
   layers:
   - Default
   - TransparentFX
