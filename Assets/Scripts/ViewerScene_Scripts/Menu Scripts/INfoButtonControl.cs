@@ -49,7 +49,7 @@ public class INfoButtonControl : MonoBehaviour
         for (j = 0; j < buttonPrefabs.Length; j++)
         {
            buttonPrefabs[j].GetComponentInChildren<Text>().text= Buttontransfrom[j].GetComponentInChildren<Text>().text;
-   
+            buttonPrefabs[j].name = Buttontransfrom[j].name;
             buttons[j] = Instantiate(buttonPrefabs[j], Buttontransfrom[j].position, Buttontransfrom[j].transform.rotation);
             buttons[j].SetActive(true);
             objRenderer = buttons[j].GetComponent<Renderer>();
