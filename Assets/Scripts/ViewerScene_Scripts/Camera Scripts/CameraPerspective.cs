@@ -15,8 +15,8 @@ public class CameraPerspective : MonoBehaviour
     float currentZoom;
     float zoomLerpSpeed = 10;
     public float speed = 10;
-    float zoomIn = 10f;//=0
-    float zoomOut = 60f;//=1
+   public float zoomIn = 10f;//=0
+   public float zoomOut = 60f;//=1
     public KeyControl kc;
     float scrollData;
     float campos = 0;
@@ -29,6 +29,9 @@ public class CameraPerspective : MonoBehaviour
     public bool zoomingIn;
     public bool zoomingOut;
     public bool kcActive = false;
+    public GameObject currentObj;
+    public float textScale;
+    public Text MaxZoomOut;
   
     
 
@@ -44,17 +47,13 @@ public class CameraPerspective : MonoBehaviour
     void Start()
     {
     
-       /* if (ObjName == "Stein") {
-        
-
-        }*/
         mainCam = Camera.main;
-        if (GameObject.FindGameObjectWithTag("KeyControl")!=null)
-        {
+        /*   if (GameObject.FindGameObjectWithTag("KeyControl")!=null)
+           {
 
-       
-        }
-       
+               return;
+           }*/
+     
     }
     public void fetchScript()
     {
@@ -74,7 +73,7 @@ public class CameraPerspective : MonoBehaviour
     void Update() {
 
 
-
+       
         scrollData = Input.GetAxis("Mouse ScrollWheel");
         if (kcActive && called ==true) {
             fetchScript();
@@ -82,7 +81,7 @@ public class CameraPerspective : MonoBehaviour
             kc.scrollwheel = true;
         }
         if (close==true) {
-            ti.CurrentCamProps(scrollbar.size,campos);
+            ti.CurrentCamProps(scrollbar.size,currentZoom);
             called = false;
         }
         else if(zoomingIn==false&&zoomingOut==false)
@@ -90,18 +89,19 @@ public class CameraPerspective : MonoBehaviour
         
            
             targetZoom -= scrollData * zoomFactor;
-            targetZoom = Mathf.Clamp(targetZoom, zoomIn, zoomOut);
-            campos = mainCam.fieldOfView = Mathf.Lerp(mainCam.fieldOfView, targetZoom, Time.deltaTime);
+            targetZoom = Mathf.Clamp(targetZoom, 10, 60);
+            currentZoom= mainCam.fieldOfView = Mathf.Lerp(mainCam.fieldOfView, targetZoom, Time.deltaTime);
+            campos = currentZoom * textScale;
 
-
-            scrollbar.size = 1 - (campos - zoomIn) / (zoomOut - zoomIn);
+          
 
             scale_text.text = campos.ToString("F2") + " cm";
+            MaxZoomOut.text = zoomOut.ToString("F2")+"cm";
             called = true;
         }
     }
 
    
-       //scrollbar= GetComponent("Scale") as Scrollbar;d
+   
    
 }

@@ -419,6 +419,18 @@ Transform:
   m_Father: {fileID: 330893578}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1082690215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1472145278778752757, guid: 110c2b992f453bd46b8d2319b7a98a3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2048531965}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1249929508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4809793351731511989, guid: 110c2b992f453bd46b8d2319b7a98a3c,
@@ -537,6 +549,8 @@ MonoBehaviour:
   scrollbar: {fileID: 83541197}
   targetZoom: 60
   speed: 10
+  zoomIn: 10
+  zoomOut: 60
   kc: {fileID: 0}
   scale_text: {fileID: 637146525}
   close: 0
@@ -546,6 +560,9 @@ MonoBehaviour:
   zoomingIn: 0
   zoomingOut: 0
   kcActive: 0
+  currentObj: {fileID: 0}
+  textScale: 0
+  MaxZoomOut: {fileID: 1082690215}
 --- !u!1 &1786665763
 GameObject:
   m_ObjectHideFlags: 0

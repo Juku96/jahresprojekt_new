@@ -11,6 +11,7 @@ public class LoadComapreObj : MonoBehaviour
     public GameObject[] compareObjects;
 
     public GameObject compareButton;
+    public CameraPerspective cp;
 
 
 
@@ -22,29 +23,39 @@ public class LoadComapreObj : MonoBehaviour
     void Start()
     {
 
-
+       cp= Camera.main.GetComponent<CameraPerspective>();
         if (gameObject.name == "Katze_Fertig")
         {
+          
+            cp.textScale =  0.2f;
+            cp.zoomOut = 12f;
             compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/Banana");
-
+           
             createButton(compareObjects);
 
         }
         if (gameObject.name == "Miniatur_Fertig")
         {
 
+            cp.zoomOut = 252f;
+            cp.textScale = 4.2f;
             compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/Audi R8");
 
             createButton(compareObjects);
         }
         if (gameObject.name == "Kopf_Fertig")
         {
+            cp.zoomOut = 360f;
+            cp.textScale = 6;
             compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/75-chevrolet_camaro_ss");
             createButton(compareObjects);
 
         }
         if (gameObject.name == "Stein_Fertig")
         {
+            cp.zoomOut = 384f;
+            cp.textScale = 6.4f;
+            
             compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/Audi R8");
             createButton(compareObjects);
 

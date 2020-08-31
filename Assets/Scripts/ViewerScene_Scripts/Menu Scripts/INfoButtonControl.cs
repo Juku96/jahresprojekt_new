@@ -55,7 +55,7 @@ public class INfoButtonControl : MonoBehaviour
         for (j = 0; j < buttonPrefabs.Length; j++)
         { int _i = j;
             infoText[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].name;
-            Debug.Log(infoText[j].transform.parent);
+
             buttonPrefabs[j].GetComponentInChildren<Text>().text= Buttontransfrom[j].GetComponentInChildren<Text>().text;
             buttonPrefabs[j].name = Buttontransfrom[j].name;
             
