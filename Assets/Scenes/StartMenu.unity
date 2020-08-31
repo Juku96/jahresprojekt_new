@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "Elendil tr\xE4gt Narsil:  das m\xE4chtige Schwert Elendils."
 --- !u!222 &193459003
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -491,6 +491,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleRight
       objectReference: {fileID: 0}
+    - target: {fileID: 5518708221350587292, guid: 60b0af7796a7f2242a0036383c9466bd,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.45098042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518708221350587292, guid: 60b0af7796a7f2242a0036383c9466bd,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.45098042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518708221350587292, guid: 60b0af7796a7f2242a0036383c9466bd,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518708221350587292, guid: 60b0af7796a7f2242a0036383c9466bd,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60b0af7796a7f2242a0036383c9466bd, type: 3}
 --- !u!1 &415003130
@@ -506,7 +526,7 @@ GameObject:
   - component: {fileID: 415003133}
   - component: {fileID: 415003132}
   m_Layer: 0
-  m_Name: Hand
+  m_Name: Wer?
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -656,7 +676,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "Die Statuen der beiden Br\xFCder haben jeweils die linke Hand, mit der
+    Handfl\xE4che nach au\xDFen, abwehrend erhoben und halten in der rechten Hand
+    eine Axt."
 --- !u!222 &442564047
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -852,7 +874,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hand
+  m_Text: "Die Heiligen Simon und Judas Thadd\xE4us"
 --- !u!222 &780004238
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -878,6 +900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 36379426960214824, guid: 19ad27233f4b65143b61f68cde0fe65c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 290386810739361677, guid: 19ad27233f4b65143b61f68cde0fe65c,
         type: 3}
@@ -1130,7 +1157,7 @@ GameObject:
   - component: {fileID: 1057056999}
   - component: {fileID: 1057056998}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Material
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1224,7 +1251,7 @@ GameObject:
   - component: {fileID: 1133001941}
   - component: {fileID: 1133001940}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: "Gr\xFCnder"
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1340,8 +1367,8 @@ Camera:
   m_GameObject: {fileID: 1164549253}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.20784314, g: 0.20784314, b: 0.20784314, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1458,7 +1485,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Head
+  m_Text: Granit
 --- !u!222 &1273392874
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1537,7 +1564,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sword
+  m_Text: "Die Kirche, die bis zu ihrem Abbruch im Jahr 1820 die gesamte Fl\xE4che
+    des heutigen Parkplatzes einnahm, war von ihrem Stifter, Kaiser Heinrich III.,
+    seinen Geburtsheiligen Simon und Judas Thadd\xE4us gewidmet worden."
 --- !u!222 &1285588669
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1615,7 +1644,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "Die Argonath, auch S\xE4ulen der K\xF6nige, wurden von K\xF6nig R\xF3mendacil
+    II. (19. K\xF6nig von Gondor) geschaffen."
 --- !u!222 &1302091154
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1821,7 +1851,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rock
+  m_Text: Iskender Yediler, 2012
 --- !u!222 &1700564068
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1884,7 +1914,7 @@ GameObject:
   - component: {fileID: 1798222013}
   - component: {fileID: 1798222012}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: Was?
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2034,7 +2064,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "Argonath ist Sindarin und bedeutet K\xF6nigssteine. Die Statuen stellen
+    Elendil und Isildur dar.\rName dieser Statur ist Elendil. Er war der Sohn Amandils,
+    des letzen Herrn von And\xFAni\xEB."
 --- !u!222 &1849048311
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2268,7 +2300,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hand
+  m_Text: "Mit der Arbeit im Berg befasst sich die \u201EHommage au Rammelsberg\u201C,
+    ein Kunstwerk des Bildhauers Christoph Wilmsen-Wiegmann. Die zehn Erzbrocken
+    stehen f\xFCr je ein Jahrhundert engster Verbindung des Bergbaus mit der Stadt
+    Goslar und bilden einen Br\xFCckenschlag von fr\xFCher zu heute. In jedem der
+    Brocken, die in der Stadt verteilt sind, ist als Metapher f\xFCr die Arbeit der
+    Bergleute ein Handabdruck eingearbeitet."
 --- !u!222 &365478494585330389
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2420,7 +2457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rock
+  m_Text: Porzellan
 --- !u!222 &641874072417777081
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2499,7 +2536,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nudelsuppe
+  m_Text: "Die Marktkirche St. Cosmas und Damian ist ein evangelisch-lutherisches
+    Kirchengeb\xE4ude im Zentrum der Altstadt von Goslar."
 --- !u!222 &704996940204529075
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2608,7 +2646,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sword
+  m_Text: "Die Kaiserpfalz Goslar umfasst ein Areal von etwa 340 mal 180 Metern,
+    gelegen am Fu\xDFe des Rammelsbergs im S\xFCden der Stadt Goslar, auf dem sich
+    im Wesentlichen das Kaiserhaus, das ehemalige Kollegiatstift \u201ESt. Simon
+    und Judas\u201C, die Pfalzkapelle St. Ulrich und die Liebfrauenkirche befinden
+    bzw. befanden."
 --- !u!222 &882329579293391534
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2687,7 +2729,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Head
+  m_Text: '* Erzbergwerk Rammelsberg
+
+    * Klauskapelle (ehem. Bergmannskapelle)
+
+    *
+    Frankenberger Kirche
+
+    * Jakobikirche'
 --- !u!222 &905007104282029901
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2901,7 +2950,7 @@ GameObject:
   - component: {fileID: 4125016358916690241}
   - component: {fileID: 4152923374535599000}
   m_Layer: 0
-  m_Name: Hand
+  m_Name: Allgemeines
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2920,7 +2969,7 @@ GameObject:
   - component: {fileID: 4125016358394543291}
   - component: {fileID: 4152923375057227362}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: Material
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2939,7 +2988,7 @@ GameObject:
   - component: {fileID: 4125016357910850667}
   - component: {fileID: 4152923373259218610}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Haustier
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2958,7 +3007,7 @@ GameObject:
   - component: {fileID: 4125016357469246724}
   - component: {fileID: 4152923373835036637}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: Wer?
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3150,7 +3199,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Head
+  m_Text: "Katzen z\xE4hlen zu den beliebtesten Heimtieren."
 --- !u!222 &2727850639140328479
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3220,7 +3269,7 @@ GameObject:
   - component: {fileID: 1183177982388524861}
   - component: {fileID: 1222264750334748132}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Standorte
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3587,7 +3636,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sword
+  m_Text: '* Marktkirche/Brusttuch
+
+    * Domvorhalle
+
+    * Kaiserpfalz
+
+    * Marktplatz'
 --- !u!222 &4492354646478188180
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3757,7 +3812,7 @@ GameObject:
   - component: {fileID: 4553817269891276267}
   - component: {fileID: 4553817269891276266}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Wer?
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3908,7 +3963,7 @@ GameObject:
   - component: {fileID: 4553817270756485071}
   - component: {fileID: 4553817270756485070}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: Schwert
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4301,7 +4356,7 @@ GameObject:
   - component: {fileID: 1231804438691530888}
   - component: {fileID: 5709607523801069601}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: "Sch\xF6pfer"
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4477,7 +4532,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Keine Ahnung
+  m_Text: "Der Marktbrunnen in Goslar gilt als eine der bedeutendsten Bronzegussarbeiten
+    aus romanischer Zeit und ist der gr\xF6\xDFte und \xE4lteste erhaltene Marktbrunnen
+    der Romanik in Deutschland."
 --- !u!222 &6498584189556428065
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4576,7 +4633,7 @@ GameObject:
   - component: {fileID: 9205244174673273533}
   - component: {fileID: 9161092973458985060}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: weitere Standorte
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4742,7 +4799,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rock
+  m_Text: "Vier Mal t\xE4glich richten sich alle Blicke und Fotoapparate auf den
+    Zwerchgiebel des \"K\xE4mmereigeb\xE4udes\" an der Ostseite des Marktplatzes."
 --- !u!222 &6974305315097247995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4877,7 +4935,7 @@ GameObject:
   - component: {fileID: 5101415996900554089}
   - component: {fileID: 5068515067914045360}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Marktbunnen
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4953,7 +5011,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rock
+  m_Text: "Vor der Kaiserpfalz steht seit 2000 einer der zehn Erzsteine aus dem Rammelsberg
+    und erinnert an die \xFCber tausendj\xE4hrige Bergbaugeschichte der Stadt Goslar.
+    Der Bildhauer Christoph Wilmsen-Wiegmann gestaltete den gebrochenen Erzbrocken
+    und setzte ihn als Symbol der harten Arbeit der Bergleute in ein Metall-Passepartout."
 --- !u!222 &7324551581082077280
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5082,7 +5143,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hand
+  m_Text: "Die Katzen sind eine Familie aus der Ordnung der Raubtiere innerhalb der
+    \xDCberfamilie der Katzenartigen. "
 --- !u!222 &7786203883973464566
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5104,7 +5166,7 @@ GameObject:
   - component: {fileID: 5609583402279777927}
   - component: {fileID: 5567604904755446878}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: Kaiserpfalz
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5142,7 +5204,7 @@ GameObject:
   - component: {fileID: 5845338267448969717}
   - component: {fileID: 5873808151353031468}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: Glockenspiel
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5161,7 +5223,7 @@ GameObject:
   - component: {fileID: 5774555256275556960}
   - component: {fileID: 5818213261535914169}
   m_Layer: 0
-  m_Name: Hand
+  m_Name: Was?
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5223,7 +5285,7 @@ GameObject:
   - component: {fileID: 6084764760767381840}
   - component: {fileID: 6119345175708906377}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: Wo?
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5314,7 +5376,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sword
+  m_Text: Katze
 --- !u!222 &8707873656923707691
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5367,7 +5429,7 @@ GameObject:
   - component: {fileID: 6699528115720688898}
   - component: {fileID: 6657626576026200027}
   m_Layer: 0
-  m_Name: Turm
+  m_Name: Marktkirche
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
