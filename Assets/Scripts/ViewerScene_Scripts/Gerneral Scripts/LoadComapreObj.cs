@@ -16,11 +16,11 @@ public class LoadComapreObj : MonoBehaviour
 
 
 
+
     // Start is called before the first frame update
 
     void Start()
     {
-
 
 
         if (gameObject.name == "Katze_Fertig")
@@ -93,12 +93,14 @@ public class LoadComapreObj : MonoBehaviour
         if (obj[j].activeSelf == false)
         {
 
-
+            compareButton.GetComponent<Image>().sprite = compareButton.GetComponent<SpriteChange>().sprites[1];
             obj[j].SetActive(true);
+        
         }
         else if (obj[j].activeSelf == true)
         {
 
+            compareButton.GetComponent<Image>().sprite = compareButton.GetComponent<SpriteChange>().sprites[0];
             obj[j].SetActive(false);
 
         }

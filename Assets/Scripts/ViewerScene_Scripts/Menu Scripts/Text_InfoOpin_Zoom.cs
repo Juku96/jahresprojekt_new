@@ -121,7 +121,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
             t += 0.5f * Time.deltaTime;
             zooming = true;
    
-            //Debug.Log("zoomed :" + zooming+"  "+t);
+     
             yield return close;
         }
 
@@ -139,12 +139,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
         close = false;
 
 
-        /*disCamPivot = Vector3.Distance(defaultPosCam, defaultPosPivot);
-        float currentDisCamPivot = Vector3.Distance(mainCam.transform.position, defaultPosPivot);
-        float shiftFactor = disCamPivot / currentDisCamPivot;
-        Debug.Log("Range : "+shiftFactor);
-        Vector3 newPos = (defaultPosPivot + mainCam.transform.position) * shiftFactor;
-        Debug.Log("Direction : " +  ( defaultPosPivot+ mainCam.transform.forward)*shiftFactor+"     "+newPos);
+     
       */
 
         Vector3 localPos= new Vector3(0f,0f,-14.6f);

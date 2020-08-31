@@ -2182,7 +2182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ofen
+  m_Text: Hallo
 --- !u!222 &704996940204529075
 CanvasRenderer:
   m_ObjectHideFlags: 0
