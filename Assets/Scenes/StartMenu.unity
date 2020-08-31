@@ -2182,7 +2182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hand
+  m_Text: Ofen
 --- !u!222 &704996940204529075
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4157,7 +4157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Head
+  m_Text: Keine Ahnung
 --- !u!222 &6498584189556428065
 CanvasRenderer:
   m_ObjectHideFlags: 0
