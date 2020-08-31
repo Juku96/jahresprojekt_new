@@ -104,7 +104,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
         cp.UpdateZoom(close);
         Panel.SetActive(true);
         textInfo = clicked.GetComponentInChildren<Text>();
-        Debug.Log(textInfo);
+
         placeholder.text = textInfo.text;
         
         clicked.SetActive(false);

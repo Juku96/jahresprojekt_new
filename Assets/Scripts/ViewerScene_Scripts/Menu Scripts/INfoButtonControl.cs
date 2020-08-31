@@ -44,7 +44,7 @@ public class INfoButtonControl : MonoBehaviour
 
     
             Buttontransfrom[i] = transform.GetChild(i);
-            Destroy(transform.GetChild(i).gameObject);
+         
 
           
             infoText[i] = info.gameObject.transform.GetChild(i);
@@ -61,13 +61,13 @@ public class INfoButtonControl : MonoBehaviour
             
             buttons[j] = Instantiate(buttonPrefabs[j], Buttontransfrom[j].position, Buttontransfrom[j].transform.rotation);
             buttons[j].SetActive(true);
-            buttons[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].GetComponentInChildren<Text>().text;
+            buttons[j].GetComponentInChildren<Text>().text= Buttontransfrom[j].transform.GetChild(0).GetComponentInChildren<Text>().text;
             objRenderer = buttons[j].GetComponent<Renderer>();
             objRenderer.material = Zwrite; 
             infoText[j].GetComponent<Button>().onClick.AddListener(() => ti.InfoMenuClicked(buttons[_i]));
         }
 
-
+       // Destroy(transform.GetChild(i).gameObject);
 
         cam = Camera.main;
       
