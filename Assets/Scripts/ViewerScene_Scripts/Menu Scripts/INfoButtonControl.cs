@@ -56,7 +56,7 @@ public class INfoButtonControl : MonoBehaviour
         { int _i = j;
             infoText[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].name;
 
-            buttonPrefabs[j].GetComponentInChildren<Text>().text= Buttontransfrom[j].GetComponentInChildren<Text>().text;
+    
             buttonPrefabs[j].name = Buttontransfrom[j].name;
             
             buttons[j] = Instantiate(buttonPrefabs[j], Buttontransfrom[j].position, Buttontransfrom[j].transform.rotation);

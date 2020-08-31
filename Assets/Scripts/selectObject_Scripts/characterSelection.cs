@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class characterSelection : MonoBehaviour
 {
-    private GameObject[] characterList;
-    private int index = 0;
-    private int PlayerRight;
-    private int PlayerLeft;
-    private GameObject passedObj;
+    public GameObject[] characterList;
+    public int index = 0;
+    public int PlayerRight;
+    public int PlayerLeft;
+    public GameObject passedObj;
     public GameObject SelectedObj;
     public GameObject Podest;
     public GameObject[] Podests;

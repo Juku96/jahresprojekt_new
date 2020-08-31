@@ -62,7 +62,16 @@ public class LoadComapreObj : MonoBehaviour
 
         }
 
+        if (gameObject.name == "Statue_Fertig")
+        {
+            cp.zoomOut = 384f;
+            cp.textScale = 6.4f;
 
+            compareObjects = Resources.LoadAll<GameObject>("Vergleichsobjekte/Banana");
+            createButton(compareObjects);
+
+
+        }
     }
 
 
