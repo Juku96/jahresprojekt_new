@@ -49,7 +49,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
         
         Panel = GameObject.FindGameObjectWithTag("panel_Placeholder");
         Panel.SetActive(false);
-
+      
         CamPivot = GameObject.FindWithTag("CamPivot");
    
         defaultPosCam = mainCam.transform.position;
@@ -106,6 +106,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
         textInfo = clicked.GetComponentInChildren<Text>();
 
         placeholder.text = textInfo.text;
+        
         clicked.SetActive(false);
         while (t <1)
         {
@@ -140,10 +141,11 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
 
 
      
-      */
+      
 
         Vector3 localPos= new Vector3(0f,0f,-14.6f);
         Panel.SetActive(false);
+    
         clicked.SetActive(true);
         
         while (t<1) {

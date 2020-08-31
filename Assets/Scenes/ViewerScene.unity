@@ -645,7 +645,7 @@ PrefabInstance:
     - target: {fileID: 1472145278341816633, guid: 110c2b992f453bd46b8d2319b7a98a3c,
         type: 3}
       propertyPath: m_TagString
-      value: panel_Placeholder
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1472145278681737944, guid: 110c2b992f453bd46b8d2319b7a98a3c,
         type: 3}
@@ -655,7 +655,7 @@ PrefabInstance:
     - target: {fileID: 1531977315714590642, guid: 110c2b992f453bd46b8d2319b7a98a3c,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: panel_Placeholder
       objectReference: {fileID: 0}
     - target: {fileID: 2332188870258550691, guid: 110c2b992f453bd46b8d2319b7a98a3c,
         type: 3}
