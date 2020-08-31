@@ -21,7 +21,8 @@ public class INfoButtonControl : MonoBehaviour
     
     public Renderer objRenderer;
     public Transform[] Buttontransfrom;
-
+    public GameObject info;
+    public Transform[] infoText;
 
 
 
@@ -31,24 +32,29 @@ public class INfoButtonControl : MonoBehaviour
     {
 
         buttonPrefabs = Resources.LoadAll("InfoButtons", typeof(GameObject)).Cast<GameObject>().ToArray();
-       
-       
+
+        info = GameObject.FindGameObjectWithTag("MenuInfo");
         Zwrite = Resources.Load("Custom_StandardOccluded", typeof(Material)) as Material;
         Buttontransfrom = new Transform[buttonPrefabs.Length];
+        infoText = new Transform[buttonPrefabs.Length];
         for (i = 0; i < buttonPrefabs.Length; i++)
         {
 
-            
+    
             Buttontransfrom[i] = transform.GetChild(i);
-            
-          //  Destroy(transform.GetChild(i).gameObject);
-           
-        }
+              
+            Destroy(transform.GetChild(i).gameObject);
+            Debug.Log(buttonPrefabs.Length);
+            Debug.Log(info.gameObject.transform.GetChild(i));
+            infoText[i] = info.gameObject.transform.GetChild(i);
 
+        }
+       
         buttons= new GameObject[buttonPrefabs.Length];
         for (j = 0; j < buttonPrefabs.Length; j++)
-        {
-           buttonPrefabs[j].GetComponentInChildren<Text>().text= Buttontransfrom[j].GetComponentInChildren<Text>().text;
+        {   
+            infoText[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].GetComponentInChildren<Text>().text; 
+            buttonPrefabs[j].GetComponentInChildren<Text>().text= Buttontransfrom[j].GetComponentInChildren<Text>().text;
             buttonPrefabs[j].name = Buttontransfrom[j].name;
             buttons[j] = Instantiate(buttonPrefabs[j], Buttontransfrom[j].position, Buttontransfrom[j].transform.rotation);
             buttons[j].SetActive(true);
