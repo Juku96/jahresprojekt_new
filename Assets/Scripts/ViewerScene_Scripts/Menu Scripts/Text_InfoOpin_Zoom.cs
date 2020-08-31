@@ -60,7 +60,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
         defaultPosPivot = CamPivot.transform.position;
         defcamPivotAbs = Vector3.Distance(defaultPosCam, defaultPosPivot);
 
-   
+
 
         ti = this;
     }
@@ -104,7 +104,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
         cp.UpdateZoom(close);
         Panel.SetActive(true);
         textInfo = clicked.GetComponentInChildren<Text>();
-
+        Debug.Log(mainCam.transform.position);
         placeholder.text = textInfo.text;
         
         clicked.SetActive(false);
@@ -128,7 +128,7 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
 
         CamPivot.transform.position = clicked.transform.position;
         mainCam.transform.position = clicked.transform.position + clicked.transform.forward * -offset;
-      
+        mainCam.transform.rotation = clicked.transform.rotation;
         mainCam.fieldOfView = 60f;
         zooming = false;
         yield return close;
@@ -174,6 +174,16 @@ public class Text_InfoOpin_Zoom : MonoBehaviour
         zooming = false;
         yield return null;
     }
+   public void InfoMenuClicked( GameObject Infopoints){
+      StartCoroutine(CameraClose(Infopoints));
+       
+        clicked = Infopoints;
+       
+    
+  
+    }
+
+
     public void OnEnable()
     {
         controls.MouseControl.Enable();

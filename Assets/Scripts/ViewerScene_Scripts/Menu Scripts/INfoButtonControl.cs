@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,14 +24,15 @@ public class INfoButtonControl : MonoBehaviour
     public Transform[] Buttontransfrom;
     public GameObject info;
     public Transform[] infoText;
-
+    public UnityEngine.Vector3 clickPos;
+    public Text_InfoOpin_Zoom ti;
 
 
     // Start is called before the first frame update
 
     void Start()
     {
-
+        ti = GameObject.FindGameObjectWithTag("canvasKlara").GetComponent<Text_InfoOpin_Zoom>();
         buttonPrefabs = Resources.LoadAll("InfoButtons", typeof(GameObject)).Cast<GameObject>().ToArray();
 
         info = GameObject.FindGameObjectWithTag("MenuInfo");
@@ -43,25 +45,26 @@ public class INfoButtonControl : MonoBehaviour
     
             Buttontransfrom[i] = transform.GetChild(i);
             Destroy(transform.GetChild(i).gameObject);
-            Debug.Log(buttonPrefabs.Length);
-            Debug.Log(info.gameObject.transform.GetChild(i));
+
+          
             infoText[i] = info.gameObject.transform.GetChild(i);
 
         }
        
         buttons= new GameObject[buttonPrefabs.Length];
         for (j = 0; j < buttonPrefabs.Length; j++)
-        {   
+        { int _i = j;
             infoText[j].GetComponentInChildren<Text>().text = Buttontransfrom[j].name;
             Debug.Log(infoText[j].transform.parent);
             buttonPrefabs[j].GetComponentInChildren<Text>().text= Buttontransfrom[j].GetComponentInChildren<Text>().text;
             buttonPrefabs[j].name = Buttontransfrom[j].name;
-           
+            
             buttons[j] = Instantiate(buttonPrefabs[j], Buttontransfrom[j].position, Buttontransfrom[j].transform.rotation);
             buttons[j].SetActive(true);
             objRenderer = buttons[j].GetComponent<Renderer>();
             objRenderer.material = Zwrite; 
-            }
+            infoText[j].GetComponent<Button>().onClick.AddListener(() => ti.InfoMenuClicked(buttons[_i]));
+        }
 
 
 

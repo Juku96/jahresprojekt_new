@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6259615666104258158}
   - component: {fileID: 4260814066174119322}
   m_Layer: 0
-  m_Name: Hand 1
+  m_Name: Hand
   m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

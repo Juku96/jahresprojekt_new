@@ -29,9 +29,11 @@ public class CameraPerspective : MonoBehaviour
     public bool zoomingIn;
     public bool zoomingOut;
     public bool kcActive = false;
- 
-    void Awake() {
+  
     
+
+    void Awake() {
+        
         
         pc = this;
         ti = FindObjectOfType<Text_InfoOpin_Zoom>();
@@ -41,9 +43,11 @@ public class CameraPerspective : MonoBehaviour
 
     void Start()
     {
-
-       
     
+       /* if (ObjName == "Stein") {
+        
+
+        }*/
         mainCam = Camera.main;
         if (GameObject.FindGameObjectWithTag("KeyControl")!=null)
         {

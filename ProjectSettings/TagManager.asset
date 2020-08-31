@@ -12,6 +12,7 @@ TagManager:
   - LoadObj
   - Sprite
   - MenuInfo
+  - canvasKlara
   layers:
   - Default
   - TransparentFX
